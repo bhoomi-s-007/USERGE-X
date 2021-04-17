@@ -194,7 +194,7 @@ Nice To Meet You !, I'm <b>{bot_.fname}</b> A Bot.
             )
             btns = [
                 [
-                    InlineKeyboardButton("👤  CONTACT", url=contact_url),
+                    InlineKeyboardButton("👑OWNER👑", url=contact_url),
                 ]
             ]
         try:
