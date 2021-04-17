@@ -213,7 +213,7 @@ if userge.has_bot:
             await callback_query.answer("you are in main menu", show_alert=True)
             return
         if len(pos_list) == 2:
-            text = " 𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨"
+            text = " 𝓡𝓔𝓐𝓟𝓔𝓡 𝓜𝓐𝓘𝓝 𝓜𝓔𝓝𝓤"
             buttons = main_menu_buttons()
         elif len(pos_list) == 3:
             text, buttons = category_data(cur_pos)
@@ -265,7 +265,7 @@ if userge.has_bot:
     @check_owner
     async def callback_mm(callback_query: CallbackQuery):
         await callback_query.edit_message_text(
-            " 𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 ",
+            " 𝓡𝓔𝓐𝓟𝓔𝓡 𝓜𝓐𝓘𝓝 𝓜𝓔𝓝𝓤 ",
             reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
         )
 
@@ -1139,8 +1139,8 @@ if userge.has_bot:
 
             MAIN_MENU = InlineQueryResultArticle(
                 title="Main Menu",
-                input_message_content=InputTextMessageContent("𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 "),
-                url="t.me/MissSerenaBot",
+                input_message_content=InputTextMessageContent("𝓡𝓔𝓐𝓟𝓔𝓡 𝓜𝓐𝓘𝓝 𝓜𝓔𝓝𝓤 "),
+                url="t.me/ScytheAssistantBot",
                 description="Main Menu",
                 thumb_url="https://i.imgur.com/1xsOo9o.png",
                 reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
