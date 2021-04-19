@@ -25,7 +25,7 @@ pmCounter: Dict[int, int] = {}
 allowAllFilter = filters.create(lambda _, __, ___: Config.ALLOW_ALL_PMS)
 noPmMessage = bk_noPmMessage = (
   """Hello {fname} this is an automated message⚠️\n\n"""
-  """You can Use @MissSerenaBot to contact **Detective**\n\n"""
+  """You can Use @ScytheAssistantBot to contact **𝙎𝙘𝙮𝙩𝙝𝙚**\n\n"""
   """Usually DM/PM's are ignored or blocked right away...but you can wait maybe I'll respond to your text in next **few years**😂\n\n"""
   """So it's better to use the assistant bot to contact me.🤷‍♀️"""
 )
@@ -296,7 +296,7 @@ async def uninvitedPmHandler(message: Message):
         PMPERMIT_MSG[message.from_user.id] = (
             await message.reply(
                 noPmMessage.format_map(SafeDict(**user_dict))
-                + "\n`- Protected by Serena`"
+                + "\n`- Protected by Reaper`"
             )
         ).message_id
         await asyncio.sleep(1)

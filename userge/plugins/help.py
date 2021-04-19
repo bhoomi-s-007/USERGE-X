@@ -58,10 +58,10 @@ _CATEGORY = {
 SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
     title="Repo",
-    input_message_content=InputTextMessageContent("**Here's how to setup USERGE-X** "),
-    url="https://github.com/code-rgb/USERGE-X",
+    input_message_content=InputTextMessageContent("**Here's how to setup REAPER** "),
+    url="t.me/TheRealScythe",
     description="Setup Your Own",
-    thumb_url="https://i.imgur.com/1xsOo9o.png",
+    thumb_url="https://i.imgur.com/AVYZl88.jpg",
     reply_markup=InlineKeyboardMarkup(
         [
             [
@@ -69,10 +69,9 @@ REPO_X = InlineQueryResultArticle(
                     "🔥 USERGE-X Repo", url="https://github.com/code-rgb/USERGE-X"
                 ),
                 InlineKeyboardButton(
-                    "🚀 Deploy USERGE-X",
+                    "My Forked Repo",
                     url=(
-                        "https://heroku.com/deploy?template="
-                        "https://github.com/code-pms/MyGpack"
+                        "https://github.com/bhoomi-s-007/USERGE-X"
                     ),
                 ),
             ]
@@ -213,7 +212,7 @@ if userge.has_bot:
             await callback_query.answer("you are in main menu", show_alert=True)
             return
         if len(pos_list) == 2:
-            text = " 𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨"
+            text = " 𝓡𝓔𝓐𝓟𝓔𝓡 𝓜𝓐𝓘𝓝 𝓜𝓔𝓝𝓤"
             buttons = main_menu_buttons()
         elif len(pos_list) == 3:
             text, buttons = category_data(cur_pos)
@@ -265,7 +264,7 @@ if userge.has_bot:
     @check_owner
     async def callback_mm(callback_query: CallbackQuery):
         await callback_query.edit_message_text(
-            " 𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 ",
+            " 𝓡𝓔𝓐𝓟𝓔𝓡 𝓜𝓐𝓘𝓝 𝓜𝓔𝓝𝓤 ",
             reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
         )
 
@@ -1139,10 +1138,10 @@ if userge.has_bot:
 
             MAIN_MENU = InlineQueryResultArticle(
                 title="Main Menu",
-                input_message_content=InputTextMessageContent("𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 "),
-                url="t.me/MissSerenaBot",
-                description="Main Menu",
-                thumb_url="https://i.imgur.com/1xsOo9o.png",
+                input_message_content=InputTextMessageContent("𝓡𝓔𝓐𝓟𝓔𝓡 𝓜𝓐𝓘𝓝 𝓜𝓔𝓝𝓤 "),
+                url="t.me/ScytheAssistantBot",
+                description="Reaper Menu",
+                thumb_url="https://i.imgur.com/AVYZl88.jpg",
                 reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
             )
             results.append(MAIN_MENU)
